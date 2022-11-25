@@ -141,25 +141,59 @@ nav{
     height: 100vh;
     padding:50px 0;   
 }
-.worklist{
+.worklist1{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 25px;
-    margin-top: 10px;
+    margin-top: 35px;
+    text-align: center;
+}
+.worklist2{
+    display:none;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 25px;
+    margin-top: 35px;
+    text-align: center;
 }
 .work{
     border-radius:  10px;
     position: relative;
     overflow: hidden;
+
 }
 .work img{
     width: 100%;
     border-radius: 10px;
     display: block;
+    
+}
+.work:hover{
+    background:rgb(7, 1, 17);
+     transform : translateY(-10px);
+     box-shadow: 0 5px 15px #4acade;
+
 }
 .layer{
     color:#4acade;
+    margin-top: 10px;
 }
+.see{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(234, 90, 215);
+    padding: 14px 50px;
+    border-radius: 6px;
+    font-size: 14px;
+    background:rgb(7, 1, 17);
+    transition: 0.3s;
+    color:white;
+}
+.see:hover{
+    background: rgb(234, 90, 215);
+}
+
+
 /*----------------projects----------------------*/
 #Project{
     height: 100vh;

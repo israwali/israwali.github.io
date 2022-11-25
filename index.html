@@ -11,11 +11,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-             $("#certificates").onclick(function(){
-               alert("Bye! You now leave p1!");
+             $(".see").click(function(){
+               $(".worklist2").slideDown("20000").css('display','grid');
+               $(".see").hide();
+
              });
            });
-           </script>
+        </script>
 </head> 
 
 <body>
@@ -97,7 +99,7 @@
  <div id="Certificates">
     <div class="container">
         <h1 class="sub-title">My Certificates</h1>
-        <div class="worklist">
+        <div class="worklist1">
             <div class="work">
                 <img src="1.jpg" height="220px" alt="Not Loading">
                 <div class="layer">
@@ -117,7 +119,8 @@
                 </div>
             </div>
         </div>
-        <div class="worklist">
+        <button class="see">See More</button>
+        <div class="worklist2">
             <div class="work">
                 <img src="4.jpg" height="220px" alt="Not Loading">
                 <div class="layer">
@@ -133,7 +136,7 @@
             <div class="work">
                 <img src="6.jpg" height="220px" alt="Not Loading">
                 <div class="layer">
-                    <h3>MATLAB: MAchine Learning Onramp</h3>
+                    <h3>MATLAB: Machine Learning Onramp</h3>
                 </div>
             </div>
         </div>
